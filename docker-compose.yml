@@ -7,6 +7,8 @@ services:
       POSTGRES_DB: mydatabase
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
+    ports:
+      - "127.0.0.1:5432:5432"
     networks:
       - mynetwork
     healthcheck:
